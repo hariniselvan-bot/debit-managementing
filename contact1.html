@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debit Manager</title>
+  <link rel="stylesheet" href="contact1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+  <!-- Header -->
+ <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.jpg" alt="Stackly Logo">
+      <h1>STACKLY</h1>
+    </a>
+  </div>
+  <!-- Hamburger icon -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label> 
+   <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home2</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="facility.html">facility</a></li>
+      <li><a href="contact1.html"class="active">Reach us</a></li>
+      <li><a href="login here.html">Login</a></li>
+      </ul>
+  </nav>
+</header>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+      <p>We make debit management simple, smart & secure for your business growth.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Let’s work together</h2>
+        <p>We’d love to help you manage your finance effectively. Reach out anytime.</p>
+        <div class="info-item">
+          <h4>Call Us</h4>
+          <p>+91 70107 92745</p>
+        </div>
+        <div class="info-item">
+          <h4>Email</h4>
+          <p>info@thestackly.com</p>
+        </div>
+        <div class="info-item">
+          <h4>Visit Office</h4>
+          <p>MMR COMPLEX, Salem, Tamil Nadu 636008</p>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Phone Number" required>
+        <select>
+          <option>Select Service</option>
+          <option>Debt Management</option>
+          <option>Financial Planning</option>
+          <option>Risk Assessment</option>
+        </select>
+        <textarea placeholder="Type your message"></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.984775946008!2d78.152741!3d11.653480!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf056fbf41e09%3A0x2852f07de8f0b25!2sMMR%20Complex%2C%20Salem%2C%20Tamil%20Nadu%20636008!5e0!3m2!1sen!2sin!4v1689876543210"
+      width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly Footer with Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    <footer>
+  <div class="footer-overlay"></div>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+
+    .footer {
+      background: url('footer.jpg') no-repeat center bottom;
+      padding: 40px 10% 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
+
+    .footer-column h3 {
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 10px 0;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-contact p {
+      margin: 6px 0;
+    }
+
+    .map {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .social-icons {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .copyright {
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        padding: 30px 5%;
+      }
+
+      .map {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="Stackly Logo">
+        <h3>STACKLY</h3>
+            </div>
+        
+
+      <div class="footer-links">
+        <h4>check us</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home2</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="facility.html">facility</a></li>
+      <li><a href="contact1.html">Reach us</a></li>
+      <li><a href="login here.html">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>MMR COMPLEX, Salem, Tamil Nadu 636008</p>
+        <p>+91 70107 92745</p>
+        <p>info@thestackly.com</p>
+      </div>
+      <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+    <a href="404.html"><i class="fab fa-twitter"></i></a>
+    <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+    <a href="404.html"><i class="fab fa-instagram"></i></a>
+  </div>
+      <iframe
+          src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Stackly | All Rights Reserved</p>
+    </div>
+  </footer>
